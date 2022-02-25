@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { api } from "../../services/api";
+import { api } from "../../services/index";
 
 import toast, { Toaster } from "react-hot-toast";
 import logo from "../../images/logo.svg";

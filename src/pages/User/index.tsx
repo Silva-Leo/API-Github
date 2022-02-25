@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { api } from "../../services/api";
+import { api } from "../../services/index";
 import { Link, useParams } from "react-router-dom";
 import logo from "../../images/logo.svg";
 import arrowLeft from "../../images/arrow-left.svg";
