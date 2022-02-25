@@ -1,22 +1,14 @@
-import { useState } from 'react'
+import { BrowserRouter as Router } from "react-router-dom";
+import { AppRoutes } from "./Routes";
+import { GlobalStyles } from "./styles/Global";
 
-import { Container } from './styles/page/Home'
-
-import Control from './components/Control/index'
-
-import Display from './components/Display/index'
-
-import './App.css'
-
-const App:React.FC =()=> {
-  // const [count, setCount] = useState(0)
-
+function App() {
   return (
-    <Container>
-      <Display totalRepositories={repos.length}/>
-      <Control/>
-    </Container>
-  )
+    <Router>
+      <AppRoutes />
+      <GlobalStyles />
+    </Router>
+  );
 }
 
-export default App
+export default App;
