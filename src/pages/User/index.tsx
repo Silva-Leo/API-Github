@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { api } from "../../services/index";
 import { Link, useParams } from "react-router-dom";
-import logo from "../../images/logo.svg";
 import arrowLeft from "../../images/arrow-left.svg";
 
 import { Profile } from "../../components/Perfil";
@@ -13,6 +12,7 @@ interface Repo {
   name: string;
   description: string;
   html_url: string;
+  starred: string
 }
 
 export function User() {
@@ -32,12 +32,6 @@ export function User() {
     <Container>
       <Wrapper>
         <header>
-          <div id="logo">
-            <Link to="/">
-              <img src={logo} alt="Logo Github Explorer" />
-            </Link>
-          </div>
-
           <Link to="/" id="back">
             <img src={arrowLeft} alt="arrow left" />
             <span>Voltar</span>
@@ -46,7 +40,6 @@ export function User() {
 
         <main>
           <Profile totalRepositories={repos.length} />
-
           <SectionRepos>
             <ListRepos>
               {repos.map(repo => (
@@ -55,6 +48,7 @@ export function User() {
                   name={repo.name}
                   description={repo.description}
                   html_url={repo.html_url}
+                  starred={repo.starred}
                 />
               ))}
             </ListRepos>

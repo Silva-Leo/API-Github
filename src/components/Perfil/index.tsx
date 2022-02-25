@@ -13,6 +13,7 @@ interface IUser {
 
   followers: number;
   following: number;
+  stars: number;
 }
 
 interface ProfileProps {

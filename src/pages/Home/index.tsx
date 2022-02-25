@@ -2,13 +2,12 @@ import { FormEvent, useState } from "react";
 import { api } from "../../services/index";
 
 import toast, { Toaster } from "react-hot-toast";
-import logo from "../../images/logo.svg";
+
 import { UserCard } from "../../components/UserCard";
 
 import {
   Container,
   Form,
-  Header,
   ListUsers,
   Main,
   SectionUsers,
@@ -65,19 +64,10 @@ export function Home() {
   return (
     <Container>
       <Wrapper>
-        <Header>
-          <a href="#">
-            <img
-              src={logo}
-              alt="Logo Github Explorer"
-              title="Logo Github Explorer"
-            />
-          </a>
-        </Header>
 
         <Main>
           <Title>
-            Explore usuários <br /> no Github.
+            API do Github <br/> Encontre um usuário e explore
           </Title>
 
           <Form onSubmit={handleSubmitForm}>

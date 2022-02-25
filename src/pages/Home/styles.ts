@@ -1,22 +1,26 @@
 import styled from "styled-components";
 
 
-export const Container = styled.div``;
+export const Container = styled.div`
+
+`;
 
 export const Wrapper = styled.div`
-  max-width: 714px;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+ 
 `;
 
-export const Header = styled.header`
-  padding: 40px 0 100px 0;
-  position: relative;
+export const Main = styled.main`
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
-
-export const Main = styled.main``;
 
 export const Title = styled.h1`
   margin-bottom: 40px;
+  text-align: center;
   font-size: 48px;
   line-height: 52px;
   color: var(--text);
