@@ -4,7 +4,7 @@ import { Container } from './styles/page/Home'
 
 import Control from './components/Control/index'
 
-import Display from './components/Display'
+import Display from './components/Display/index'
 
 import './App.css'
 
@@ -13,7 +13,7 @@ const App:React.FC =()=> {
 
   return (
     <Container>
-      <Display/>
+      <Display totalRepositories={repos.length}/>
       <Control/>
     </Container>
   )
