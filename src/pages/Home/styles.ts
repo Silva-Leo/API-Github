@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   width: 100%;
   display: flex;
- 
+  margin-top: 50px;
 `;
 
 export const Main = styled.main`
